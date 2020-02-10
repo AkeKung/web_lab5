@@ -102,8 +102,6 @@ let female;
 let male;
 let other;
 db.collection('users').orderBy("name").onSnapshot(doc => {
-    let table = $('tbody')[0];
-    $(`tbody tr`).remove();
     female=0;
     male=0;
     other=0;
