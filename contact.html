@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css"
+    integrity="sha256-kx16nUTlNRyEpdk7cvpnqblbDbTe/nADul9o2uYeGSw=" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="./dist/css/skins/skin-yellow.min.css">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
+</head>
+
+<body class="hold-transition skin-yellow sidebar-mini">
+  <!-- Site wrapper -->
+  <div class="wrapper">
+
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>A</b>K</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>Ake</b>Kung</span>
+      </a>
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+      </nav>
+    </header>
+
+    <!-- =============================================== -->
+
+    <!-- Left side column. contains the sidebar -->
+    <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="dist/img/me.jpg" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p>Weerachai Sarakun</p>
+          </div>
+        </div>
+
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+          </li>
+          <li><a href="index.html"><i class="fa fa-home"></i> <span>Home</span></a></li>
+          <li><a href="gallary.html"><i class="fa fa-image"></i> <span>Gallery</span></a></li>
+          <li><a href="contact.html"><i class="fa fa-comments"></i> <span>Contact</span></a></li>
+          <li><a href="game.html"><i class="fa fa-gamepad"></i> <span>Game</span></a></li>
+
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- =============================================== -->
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+          Contact
+        </h1>
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+
+        <!-- Default box -->
+        <div class="box">
+          <div class="box-wrapper">
+            <div class="row">
+
+              <!-- /.col -->
+
+                <!-- general form elements disabled -->
+                <div class="content-header">
+                  <div class="col-md-6">
+
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <form role="form">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your name...">
+                      </div>
+
+                      <div class="form-group">
+                        <label>Gender</label> </br>
+                        <input type="radio" name="gender" value="male"> Male<br>
+                        <input type="radio" name="gender" value="female"> Female<br>
+                        <input type="radio" name="gender" value="other"> Other<br>  
+                      </div>
+
+                      <div class="form-group">
+                        <label>Email</label>
+                        <input id="email" type="text" class="form-control" placeholder="Your mail...">
+                      </div>
+
+                      <!-- textarea -->
+                      <div class="form-group">
+                        <label>Detail</label>
+                        <textarea id="detail"class="form-control" rows="3" placeholder="Write something ..."></textarea>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6 col-sm-6 col-xs-6">
+                          <div class="box-footer">
+                            <button type="reset" value="Reset"  class="btn btn-danger">Reset</button>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6 col-sm-6 col-xs-6">
+                          <div class="box-footer">
+                            <button type="button" id="save" class="btn btn-success pull-right">Save</button>
+                          </div>
+                        </div>
+                      </div>
+                        <!-- /.box -->
+                      </div>
+                  
+                      
+                    </form>
+                  </div>
+                  <div class="col-md-6">
+                     <!-- DONUT CHART -->
+                     <div class="box box-danger">
+                      <div class="box-header with-border">
+                        <h3 class="box-title">Statistics</h3>
+                      </div>
+                      <div class="box-body chart-responsive">
+                        <div class="chart" id="genders-chart" style="height: 300px; position: relative;">
+                          <svg height="300" version="1.1" width="433" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            style="overflow: hidden; position: relative;">
+                            <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+
+                            </defs>
+                            <path fill="none" stroke="#3c8dbc"
+                              d="M216.6,243.33333333333331A93.33333333333333,93.33333333333333,0,0,0,304.82775519497704,180.44625304313007"
+                              stroke-width="2" opacity="0"
+                              style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;">
+                            </path>
+                         
+                            <text x="216.6" y="140" text-anchor="middle" font-family="&quot;Arial&quot;"
+                              font-size="15px" stroke="none" fill="#000000"
+                              style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 15px; font-weight: 800;"
+                              font-weight="800" transform="matrix(1.452,0,0,1.452,-98.001,-68.166)"
+                              stroke-width="0.6887090773809524">
+                            </text>
+                            <text x="216.6" y="160" text-anchor="middle" font-family="&quot;Arial&quot;"
+                              font-size="14px" stroke="none" fill="#000000"
+                              style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 14px;"
+                              transform="matrix(1.9425,0,0,1.9425,-204.2603,-143.2672)"
+                              stroke-width="0.5147879464285714">
+                              
+                            </text>
+                          </svg>
+                        </div>
+                      </div>
+                      <!-- /.box-body -->
+                    </div>
+                    <!-- /.box -->
+                  </div>
+                  </div>
+                  </div>
+
+                  <div id="contact">
+                    <div class="row">
+                     
+              <!-- /.col -->
+            </div>
+          </div>
+
+        </div>
+        <!-- /.box -->
+
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery 3 -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!-- Bootstrap 3.3.7 -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+  <!-- SlimScroll -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"
+    integrity="sha256-qE/6vdSYzQu9lgosKxhFplETvWvqAAlmAuR+yPh/0SI=" crossorigin="anonymous"></script>
+  <!-- FastClick -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"
+    integrity="sha256-t6SrqvTQmKoGgi5LOl0AUy+lBRtIvEJ+++pLAsfAjWs=" crossorigin="anonymous"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+  
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+
+  <script src="dist/js/contact.js"></script>
+</body>
+
+</html>
